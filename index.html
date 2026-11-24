@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости мира кино</title>
+</head>
+<body>
+    <div class="widget" id="widget">
+        <div class="widget__header">
+            <h2 class="widget__title">Новости мира кино</h2>
+            <button class="widget__refresh" id="refresh">Обновить</button>
+        </div>
+
+        <div class="widget__body">
+            <!-- Скелетон: 3 группы -->
+            <div class="skeleton" id="skeleton">
+                <div class="skeleton__group">
+                    <div class="skeleton__title"></div>
+                    <div class="skeleton__item">
+                        <div class="skeleton__avatar"></div>
+                        <div class="skeleton__lines">
+                            <div class="skeleton__line"></div>
+                            <div class="skeleton__line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skeleton__group">
+                    <div class="skeleton__title"></div>
+                    <div class="skeleton__item">
+                        <div class="skeleton__avatar"></div>
+                        <div class="skeleton__lines">
+                            <div class="skeleton__line"></div>
+                            <div class="skeleton__line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skeleton__group">
+                    <div class="skeleton__title"></div>
+                    <div class="skeleton__item">
+                        <div class="skeleton__avatar"></div>
+                        <div class="skeleton__lines">
+                            <div class="skeleton__line"></div>
+                            <div class="skeleton__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Экран ошибки -->
+            <div class="error" id="error">
+                <p>Не удалось загрузить данные</p>
+                <p>Проверьте подключение</p>
+                <p>и обновите страницу</p>
+            </div>
+
+            <!-- Реальные новости -->
+            <div class="news" id="news"></div>
+        </div>
+    </div>
+</body>
+</html>
