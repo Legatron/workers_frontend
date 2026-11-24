@@ -29,7 +29,7 @@ module.exports = (env, argv) => {
       new webpack.DefinePlugin({
         __API_URL__: JSON.stringify(
           isProd
-            ? 'https://workers-backend-kdx2.onrender.com' // URL с Render
+            ? 'https://workers-backend-kdx2.onrender.com/api/news' // URL с Render
             : '/api/news'                                  // проксируется на localhost:3000
         ),
         __IS_PROD__: JSON.stringify(isProd),
